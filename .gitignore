@@ -1,0 +1,21 @@
+# node.js modules
+node_modules/
+dist/
+build/
+
+# local env files
+.env
+.env.*
+
+# Google Cloud credentials
+**/config/*.json
+
+# log files
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE settings
+.vscode/

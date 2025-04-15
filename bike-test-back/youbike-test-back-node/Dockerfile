@@ -1,0 +1,37 @@
+FROM node:20.0.0
+
+WORKDIR /app
+COPY . .
+ENV PORT=3000
+
+
+
+ENV LDAP_ACCOUNT=GB3192
+ENV LDAP_PASSWORD=Dd308132299.
+ENV LDAP_URL=ldap://61.216.3.230:389
+ENV JWT_KEY=YOUBikeTestBackSecretKey
+ENV GCP_URL=https://asia-east1-upheld-now-268802.cloudfunctions.net/frontend_bq2
+
+# Cloud sql 上的
+
+# 這是公開Ip
+# ENV GCP_MYSQL_HOST=35.229.175.138
+# gcp內網
+ENV GCP_MYSQL_HOST=10.3.1.3
+ENV GCP_MYSQL_USER=GB3192
+ENV GCP_MYSQL_PASSWORD=)@y]d3X}:TI+d?Y]
+ENV GCP_MYSQL_PORT=3306
+ENV GCP_MYSQL_DATABASE=youbike-01
+
+
+
+# GCP storage
+ENV GCP_STORAGE_BUCKETNAME=youbike-data
+ENV GCP_STORAGE_FILENAME=youbike-test
+
+
+
+RUN ["npm","install"]
+EXPOSE 3000
+
+CMD [ "npm","start" ]
