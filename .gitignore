@@ -19,3 +19,19 @@ Thumbs.db
 
 # IDE settings
 .vscode/
+
+# 機密檔案
+*.env
+*.pem
+*.key
+*.json
+# 忽略 node_modules
+node_modules/
+# IDE 和系統
+.vscode/
+
+# 開發中暫存資料夾
+nodetest/
+YouBike-Report/
+youbike-test-node/
+youbike-test/
