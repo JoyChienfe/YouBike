@@ -29,4 +29,9 @@ Thumbs.db
 node_modules/
 # IDE 和系統
 .vscode/
-.DS_Store
+
+# 開發中暫存資料夾
+nodetest/
+YouBike-Report/
+youbike-test-node/
+youbike-test/
