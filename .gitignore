@@ -31,7 +31,3 @@ node_modules/
 .vscode/
 
 # 開發中暫存資料夾
-nodetest/
-YouBike-Report/
-youbike-test-node/
-youbike-test/
