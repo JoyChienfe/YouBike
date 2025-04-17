@@ -1,0 +1,1 @@
+import{bF as e,u as o,aE as s,F as n,v as t}from"./index-4RCi8tBY.js";const c={},r=t("div",null,"入口網站",-1),a=t("a",{href:"https://report.youbike.com.tw/"},"報表網站",-1),_=t("br",null,null,-1),l=t("a",{href:"https://simulation.youbike.com.tw/"},"模擬體驗前台",-1);function i(u,d){return s(),o(n,null,[r,a,_,l],64)}const f=e(c,[["render",i]]);export{f as default};
