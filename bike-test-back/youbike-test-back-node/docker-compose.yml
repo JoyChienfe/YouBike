@@ -1,0 +1,8 @@
+version: "3.8"
+services:
+  myweb:
+    build:
+      context: .
+    image: asia-east1-docker.pkg.dev/upheld-now-268802/cloudrun/youbike-test-back-node
+    ports:
+      - "3000:3000"
