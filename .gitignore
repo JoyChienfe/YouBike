@@ -1,38 +1,23 @@
-# node.js modules
+# Node modules
 node_modules/
+
+# Build output
 dist/
 build/
 
-# local env files
+# Environment variables
 .env
 .env.*
 
-# Google Cloud credentials
-**/config/*.json
-
-# log files
-*.log
-
-# OS files
+# System files
 .DS_Store
 Thumbs.db
 
 # IDE settings
 .vscode/
 
-# 機密檔案
-*.env
-*.pem
-*.key
-*.json
-# 忽略 node_modules
-node_modules/
-# IDE 和系統
-.vscode/
+# Log files
+*.log
 
-# 開發中暫存資料夾
-#testtest
-
-#test 2
-
-#測試PR流程練習用
+# OS crash reports
+*.pid
