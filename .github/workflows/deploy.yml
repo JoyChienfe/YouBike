@@ -1,0 +1,28 @@
+name: Firebase Deploy
+
+on:
+  push:
+    branches:
+      - '**' # 任何分支 push 都會觸發 workflow
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    if: github.ref == 'refs/heads/main' # 只有 main 才會執行下面的 job
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - run: npm install
+      - run: npm run build
+
+      - uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: "${{ secrets.GITHUB_TOKEN }}"
+          firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT }}"
+          channelId: live
