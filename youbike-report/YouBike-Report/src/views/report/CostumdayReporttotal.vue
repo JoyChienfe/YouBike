@@ -72,6 +72,9 @@
               <option value="Pingtung" v-if="canusecitys.includes(16)">
                 屏東縣
               </option>
+              <option value="Taitung" v-if="canusecitys.includes(19)">
+                台東縣
+              </option>
             </template>
             <template v-else-if="category == 1">
               <option value="NTP" v-if="canusecitys.includes(3)">新北市</option>

@@ -559,6 +559,79 @@ const changecity = () => {
         disabled: !canusecitys.includes(19),
       },
     ];
+  } else if (category.value === "2.0+2.0E") {
+    cityoptions.value = [
+      {
+        label: "台北市",
+        value: "台北市",
+        disabled: !canusecitys.includes(2),
+      },
+      {
+        label: "新北市",
+        value: "新北市",
+        disabled: !canusecitys.includes(3),
+      },
+      {
+        label: "桃園市",
+        value: "桃園市",
+        disabled: !canusecitys.includes(4),
+      },
+      {
+        label: "新竹市",
+        value: "新竹市",
+        disabled: !canusecitys.includes(5),
+      },
+      {
+        label: "新竹縣",
+        value: "新竹縣",
+        disabled: !canusecitys.includes(6),
+      },
+      {
+        label: "竹科",
+        value: "竹科",
+        disabled: !canusecitys.includes(20),
+      },
+      {
+        label: "苗栗縣",
+        value: "苗栗縣",
+        disabled: !canusecitys.includes(7),
+      },
+      {
+        label: "台中市",
+        value: "台中市",
+        disabled: !canusecitys.includes(8),
+      },
+      {
+        label: "嘉義市",
+        value: "嘉義市",
+        disabled: !canusecitys.includes(12),
+      },
+      {
+        label: "嘉義縣",
+        value: "嘉義縣",
+        disabled: !canusecitys.includes(13),
+      },
+      {
+        label: "台南市",
+        value: "台南市",
+        disabled: !canusecitys.includes(14),
+      },
+      {
+        label: "高雄市",
+        value: "高雄市",
+        disabled: !canusecitys.includes(15),
+      },
+      {
+        label: "屏東縣",
+        value: "屏東縣",
+        disabled: !canusecitys.includes(16),
+      },
+      {
+        label: "台東縣",
+        value: "台東縣",
+        disabled: !canusecitys.includes(19),
+      },
+    ];
   }
 };
 
