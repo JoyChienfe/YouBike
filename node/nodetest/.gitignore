@@ -22,3 +22,8 @@ build/
 dist/
 
 public/
+
+# ignore gcp secrets
+config/*.json
+*.key.json
+*.service-key.json
