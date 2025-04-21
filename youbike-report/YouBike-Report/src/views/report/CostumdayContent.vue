@@ -49,6 +49,9 @@
               <option value="Tainan" v-if="canusecitys.includes(14)">台南市</option>
               <option value="Kaohsiung" v-if="canusecitys.includes(15)">高雄市</option>
               <option value="Pingtung" v-if="canusecitys.includes(16)">屏東縣</option>
+              <option value="Taitung" v-if="canusecitys.includes(19)">
+                台東縣
+              </option>
             </template>
           </select>
         </div>

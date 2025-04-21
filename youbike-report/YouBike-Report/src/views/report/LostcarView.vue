@@ -69,6 +69,9 @@
             <option value="Pingtung" v-if="canusecitys.includes(16)">
               屏東縣
             </option>
+            <option value="Taitung" v-if="canusecitys.includes(19)">
+              台東縣
+            </option>
           </select>
         </div>
         <div
@@ -203,6 +206,8 @@ const chineseCity = (city) => {
       return "高雄市";
     case "Pingtung":
       return "屏東縣";
+    case "Taitung":
+      return "台東縣";
     default:
       return "未知城市";
   }
