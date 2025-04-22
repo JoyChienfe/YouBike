@@ -1,1 +1,40 @@
-#（暫時不排除任何檔案）
+# 📁 Runtime
+pids
+*.pid
+*.lock
+
+# 📦 忽略 node 套件與快取
+node_modules/
+.npm/
+
+# 🌱 環境變數（不要上傳）
+.env
+.env.*
+
+# 🚀 打包輸出（視情況是否加入）
+#build/
+#dist/
+
+# ⚠️ 忽略 public 中不需要的暫存 / source map
+public/*.map
+public/*.tmp
+public/*.log
+public/*.bak
+public/static/js/*.map
+public/static/css/*.map
+
+# ✅ 若你需要保留 public 的關鍵檔案
+!public/index.html
+!public/assets/*.js
+!public/assets/*.css
+!public/favicon.ico
+
+# ☁️ GCP 金鑰與機密資料
+config/*.json
+*.key.json
+*.service-key.json
+
+# 🗑️ 其他你不希望加入 Git 的雜項檔案
+.DS_Store
+Thumbs.db
+*.orig
