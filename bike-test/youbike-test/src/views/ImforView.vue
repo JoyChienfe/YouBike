@@ -79,6 +79,7 @@ const cities = [
   { value: "台南市", label: "台南市" },
   { value: "高雄市", label: "高雄市" },
   { value: "屏東縣", label: "屏東縣" },
+  { value: "台東縣", label: "台東縣" },
 ];
 
 // 抓取場站資料

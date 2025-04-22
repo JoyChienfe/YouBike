@@ -1,1 +1,42 @@
-#（暫時不排除任何檔案）
+# 📁 Runtime
+pids
+*.pid
+*.lock
+
+# 📦 忽略 node 套件與快取
+node_modules/
+.npm/
+.cache/
+
+# 🌱 環境變數（不要上傳）
+.env
+.env.*
+*.env.*
+
+# 🚀 打包輸出（視情況是否加入）
+# 若你這次要 commit dist，請註解掉這行
+# dist/
+
+# ⚠️ 忽略 public 中不必要的暫存 / 原始 map / 靜態資源快取
+**/*.map
+**/*.tmp
+**/*.log
+**/*.bak
+**/*.orig
+
+# ✅ 保留部署必要的 public 檔案
+!node/nodetest/public/index.html
+!node/nodetest/public/assets/
+!node/nodetest/public/favicon.ico
+
+# ☁️ GCP 金鑰與機密資料
+config/*.json
+*.key.json
+*.service-key.json
+
+# 🗑️ IDE 雜項與 OS 快取檔
+.DS_Store
+Thumbs.db
+
+# 🧪 VS Code 開發設定
+.vscode/
