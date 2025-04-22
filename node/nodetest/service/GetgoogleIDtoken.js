@@ -35,7 +35,7 @@ async function generateIdToken() {
   // 讀取 JSON 文件
   const serviceAccountKey = JSON.parse(
     fs.readFileSync(
-      path.join(__dirname, "../config/upheld-now-268802-b0a1cc72c33b.json")
+      path.join(__dirname, "../config/gcp-service-key.json")
     )
   );
   // 定義 JWT 的 payload
